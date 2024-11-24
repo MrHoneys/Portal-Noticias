@@ -4,7 +4,7 @@
         "title": "O que é Sequestro de Link Quebrado?",
         "image": "https://media.discordapp.net/attachments/1310302233992233082/1310302272592547960/DALLE_2024-11-24_14.53.22_-_An_illustration_showing_the_concept_of_a_Broken_Link_Hijacking._A_computer_screen_with_a_broken_link_symbol_chain_broken_in_half_with_a_hacker_fi.webp?ex=6744b996&is=67436816&hm=c159f6c14abbc1c15dd8774feb300ff5ed081869332aef07d68a788bc619cef8&=&format=png",
         "description": "O sequestro de link quebrado é quando hackers controlam links externos inativos em um site, aproveitando sua vulnerabilidade.",
-        "link": "pages/post/post1.html",
+        "link": "/Portal-Noticias/pages/post/post1.html",
         "topics": ["segurança cibernética"]
 
     }
