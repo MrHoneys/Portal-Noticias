@@ -26,10 +26,11 @@ Primeiro, faça o clone do repositório para o seu computador utilizando o segui
 
 ```bash
 git clone https://github.com/MrHoneys/Portal-Noticias.git
-
-
+````
+````bash
 2. Navegar para o Diretório do Projeto
 Após clonar o repositório, entre no diretório do projeto:
+````
 
 ```bash
 cd Portal-Noticias
@@ -58,26 +59,29 @@ Aqui está uma visão geral da estrutura de diretórios do projeto:
 Portal-Noticias/
 │
 ├── index.html           # Página principal do portal
-├── assets/              # Imagens e outros arquivos estáticos
+├── source/              # Imagens e outros arquivos estáticos
+│   ├── logo/            # Imagem do logo
+│   └── equipe/          # Imagem da equipe
 ├── css/                 # Arquivos de estilo
-│   └── tailwind.css     # Arquivo do TailwindCSS
+│   └── styles.css       # Arquivo de estilo do index
 ├── js/                  # Scripts JavaScript
-│   └── main.js          # Arquivo principal de JS
+│   ├── app.js           # Arquivo principal de JS
+│   └── postagem.js      # Script para gerenciamento de postagens
+├── config/              # Configurações do projeto
+│   └── pages/           # Arquivos de configuração das páginas
+│       └── noticias.json # Arquivo JSON com as notícias
+├── pages/               # Páginas do portal
+│   ├── sobre/           # Página "Sobre"
+│   ├── contato/         # Página "Contato"
+│   └── post/            # Página de postagens
+│       └── post1/       # Postagem 1
 └── README.md            # Este arquivo
+
 ```
 
 Personalização
 TailwindCSS foi utilizado para facilitar a customização. Você pode modificar a estrutura de estilos diretamente no arquivo `tailwind.css`.
 O código HTML e JavaScript é facilmente extensível, permitindo adicionar mais categorias de notícias, novos layouts ou interações.
-
-Contribuição
-Se você deseja contribuir para o desenvolvimento deste projeto, siga as etapas abaixo:
-
-1. Faça o fork do repositório
-2. Crie uma branch para sua nova funcionalidade (`git checkout -b nova-funcionalidade`)
-3. Faça as alterações desejadas e faça commit (`git commit -am 'Adicionando nova funcionalidade'`)
-4. Envie para o repositório remoto (`git push origin nova-funcionalidade`)
-5. Abra um Pull Request
 
 Licença
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
