@@ -1,0 +1,31 @@
+/* Estilos gerais do header */
+.menu-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1b1b1b; /* Cor escura para o fundo */
+    color: #ecf0f1; /* Cor clara para o texto */
+}
+
+/* Logo */
+.menu-navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ecf0f1; /* Cor clara para o logo */
+}
+
+/* Links de navegação */
+.menu-navbar a {
+    text-decoration: none;
+    color: #ecf0f1; /* Cor clara para os links */
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+.menu-navbar a:hover {
+    color: #e74c3c; /* Cor vermelha ao passar o mouse */
+}

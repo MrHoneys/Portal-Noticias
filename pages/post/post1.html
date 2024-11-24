@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteNinja Noticias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="source/css/styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold"><i class="fas fa-newspaper"></i> ByteNinja</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../.././index.html" class="hover:text-blue-400"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="../.././index.html" class="hover:text-blue-400"><i class="fas fa-laptop"></i> Noticias</a></li>
+                    <li><a href="../sobre.html" class="hover:text-blue-400"><i class="fas fa-futbol"></i> Sobre</a></li>
+                    <li><a href="../contato.html" class="hover:text-blue-400"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Layout com barra lateral à direita -->
+    <div class="container mx-auto py-16 px-6 grid grid-cols-12 gap-6">
+        <!-- Artigo Central (exibe o conteúdo principal) -->
+        <div class="col-span-9 bg-white p-8 rounded-lg shadow-lg">
+            <!-- Imagem de Capa -->
+            <div class="mb-6">
+                <img src="https://media.discordapp.net/attachments/1310302233992233082/1310309557213597756/sequestro_de_link.png?ex=6744c05e&is=67436ede&hm=024b117f7d109fb2d567ec36094f643f14d35c5e44517d6eb8e55402db992ccb&=&format=png" alt="Imagem do artigo" class="w-full rounded-lg shadow-md">
+            </div>
+
+            <!-- Título -->
+            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Sequestro de Link Quebrado na Segurança Cibernética</h2>
+
+            <!-- Autor e Data -->
+            <div class="flex items-center space-x-4 text-gray-600 mb-6">
+                <div class="flex items-center">
+                    <i class="fas fa-user text-gray-700"></i>
+                    <span class="ml-2">Julio Cezar</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-calendar text-gray-700"></i>
+                    <span class="ml-2">24/11/2024</span>
+                </div>
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="text-lg text-gray-700 mb-8">
+                <p class="mb-4">O <strong>Sequestro de link quebrado</strong> (também conhecido como <strong>Link hijacking</strong>) é uma técnica maliciosa crescente no campo da segurança cibernética, onde links quebrados de sites legítimos são manipulados para redirecionar os usuários para sites maliciosos. Com o aumento da complexidade das redes e da interconexão de páginas web, esse tipo de ataque tem se tornado cada vez mais comum, explorando a confiança dos usuários.</p>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Como os Links se Quebram e Como São Explorados?</h3>
+                <p class="mb-4">Os links podem se tornar quebrados por diversas razões, como alterações nas páginas de destino, remoção de conteúdos ou até mesmo falhas na codificação. Essas falhas podem ser exploradas por atacantes de diversas maneiras:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Alterações ou remoções de páginas:</strong> Links podem levar a páginas inexistentes ou removidas.</li>
+                    <li><strong>Erro de codificação:</strong> Links malformados ou inválidos são mais fáceis de serem manipulados.</li>
+                    <li><strong>Domínios expirados:</strong> Domínios antigos podem ser comprados por atacantes, redirecionando os usuários para sites falsos.</li>
+                    <li><strong>Links internos desatualizados:</strong> Em sites grandes, links internos quebrados podem ser manipulados para fins maliciosos.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Como Identificar o Sequestro de Link Quebrado?</h3>
+                <p class="mb-4">A identificação de links quebrados sequestrados envolve a realização de auditorias constantes e o uso de ferramentas especializadas. Aqui estão alguns métodos para detectar o sequestro de links:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Monitoramento de links internos e externos:</strong> Ferramentas como <strong>Google Search Console</strong> ou <strong>Screaming Frog</strong> ajudam a identificar links quebrados em seu site.</li>
+                    <li><strong>Análise de redirecionamentos:</strong> Verifique se os links quebrados estão redirecionando para sites desconhecidos ou suspeitos.</li>
+                    <li><strong>Ferramentas de segurança:</strong> Utilize ferramentas como <strong>Sucuri</strong> ou <strong>SiteLock</strong> para detectar redirecionamentos maliciosos.</li>
+                    <li><strong>Verificação de conteúdo externo:</strong> Ferramentas de monitoramento de backlinks, como <strong>Majestic</strong> e <strong>Moz</strong> podem alertar para qualquer link suspeito.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Quais São os Riscos do Sequestro de Link Quebrado?</h3>
+                <p class="mb-4">Os riscos associados ao sequestro de link quebrado são substanciais e podem afetar tanto a segurança do usuário quanto a reputação do site afetado. Aqui estão os principais riscos:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Roubo de dados pessoais:</strong> Links quebrados sequestrados podem redirecionar os usuários para páginas falsas, roubando informações sensíveis como credenciais bancárias e dados pessoais.</li>
+                    <li><strong>Instalação de malware:</strong> Os redirecionamentos maliciosos podem resultar na instalação de vírus, trojans ou ransomware nos dispositivos dos usuários.</li>
+                    <li><strong>Perda de confiança do usuário:</strong> Quando os usuários se deparam com redirecionamentos fraudulentos, eles podem perder a confiança no site original.</li>
+                    <li><strong>Prejuízo à reputação do site:</strong> Sites comprometidos podem ser classificados como inseguros, resultando em perda de tráfego e credibilidade.</li>
+                    <li><strong>Impacto negativo no SEO:</strong> Links quebrados ou maliciosos podem prejudicar o desempenho do SEO do site, levando a uma queda nos rankings de pesquisa.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Como Evitar o Sequestro de Link Quebrado?</h3>
+                <p class="mb-4">A prevenção contra o sequestro de link quebrado envolve práticas de segurança contínuas e monitoramento constante. Algumas das principais medidas incluem:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Manter os links atualizados:</strong> Atualize sempre que mover ou excluir páginas, redirecionando os links quebrados para páginas válidas.</li>
+                    <li><strong>Usar HTTPS e certificados SSL:</strong> A utilização de HTTPS ajuda a garantir que as comunicações entre os usuários e o site sejam seguras e dificultem a interceptação de links.</li>
+                    <li><strong>Verificar links com ferramentas de auditoria:</strong> Ferramentas de auditoria, como <strong>Screaming Frog</strong> ou <strong>Ahrefs</strong> ajudam a detectar links quebrados e redirecionamentos maliciosos.</li>
+                    <li><strong>Educar os usuários:</strong> Informar os usuários sobre a importância de verificar links antes de clicar, especialmente links provenientes de e-mails ou mensagens desconhecidas.</li>
+                    <li><strong>Implementar monitoramento de segurança:</strong> Ferramentas de segurança como <strong>Web Application Firewalls (WAF)</strong> podem ajudar a detectar e bloquear tentativas de sequestro de links em tempo real.</li>
+                </ul>
+
+                <p class="mb-4">A segurança do seu site e dos seus usuários depende da vigilância constante e da adoção de práticas de segurança cibernética adequadas. Com a implementação de medidas de prevenção, você pode proteger seu site contra o sequestro de link quebrado e outros ataques cibernéticos.</p>
+            </div>
+
+            <!-- Compartilhar -->
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="https://discord.gg/qPqbcrR3K8" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/feed/" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MrHoneys" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Barra Lateral Direita -->
+        <div class="col-span-3 bg-white p-6 rounded-lg shadow-lg">
+            <!-- Barra de Pesquisa -->
+            <div class="mb-6">
+                <input type="text" id="search-input" placeholder="Pesquisar..." class="w-full p-3 border border-gray-300 rounded-lg">
+                <div id="search-suggestions" class="mt-2 text-gray-600"></div>
+            </div>
+
+            <!-- Últimas Postagens -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Últimas Postagens</h3>
+            <ul id="recent-posts" class="space-y-4">
+                <!-- As postagens serão carregadas aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ByteNinja. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../source/js/postagem.js"></script>
+</body>
+
+</html>

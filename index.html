@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteNinja Noticias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="source/css/styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Cabeçalho (Navbar Fixa) -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold"><i class="fas fa-newspaper"></i> ByteNinja</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-400"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#noticias" class="hover:text-blue-400"><i class="fas fa-laptop"></i> Noticias</a></li>
+                    <li><a href="pages/sobre.html" class="hover:text-blue-400"><i class="fas fa-futbol"></i> Sobre</a></li>
+                    <li><a href="pages/contato.html" class="hover:text-blue-400"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto flex py-10">
+
+        <!-- Seção de Notícias Principais -->
+        <main class="w-3/4 pr-6">
+            <section class="bg-gray-200 py-10 text-center rounded-lg shadow-md">
+                <h2 class="text-4xl font-bold mb-6">Fique Atualizado com as Últimas Notícias</h2>
+                <p class="text-lg mb-6">Sua fonte confiável para notícias de última hora, análises e reportagens
+                    aprofundadas.</p>
+                <button
+                    class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transform transition duration-300 hover:scale-105">Explore
+                    Agora</button>
+            </section>
+
+            <section class="py-10" id="noticias">
+                <h3 class="text-3xl font-bold mb-6">Últimas Notícias</h3>
+                <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- As notícias serão carregadas aqui via JavaScript -->
+                </div>
+
+                <!-- Botões de navegação -->
+                <div id="pagination" class="flex justify-between mt-6">
+                    <button id="prev-button" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" disabled>Voltar</button>
+                    <button id="next-button" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Próximo</button>
+                </div>
+                
+
+            </section>
+
+        </main>
+
+        <!-- Seção da Barra Lateral -->
+        <aside class="w-1/4 bg-gray-100 p-6 rounded-lg shadow-md">
+            <!-- Seção de Pesquisa -->
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold mb-4">Pesquisar</h4>
+                <input id="search-input" type="text" class="w-full p-2 mb-4 border rounded" placeholder="Pesquisar notícias...">
+                <button id="search-button" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Pesquisar</button>
+                <div id="search-suggestions" class="bg-white border rounded shadow-md max-h-48 overflow-y-auto mt-2"></div>
+            </div>
+            
+
+            <!-- Seção de Notícias em Destaque -->
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold mb-4">Notícias em Destaque</h4>
+                <ul>
+                    <!-- As notícias serão carregadas aqui via JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Seção de Tópicos Tendências -->
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold mb-4">Tópicos em Alta</h4>
+                <ul class="space-y-2">
+                    <!-- As notícias serão carregadas aqui via JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Seção de Eventos Futuros -->
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold mb-4">Eventos Futuros</h4>
+                <ul>
+                    <li><a href="#" class="text-blue-600 hover:underline"></a></li>
+                </ul>
+            </div>
+
+            <!-- Seção de Boletim Informativo -->
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold mb-4">Inscreva-se no Nosso Boletim</h4>
+                <input type="email" class="w-full p-2 mb-4 border rounded" placeholder="Digite seu e-mail">
+                <button class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Inscrever-se</button>
+            </div>
+
+            <!-- Links de Redes Sociais -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Siga-nos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://discord.gg/qPqbcrR3K8" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.linkedin.com/feed/" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MrHoneys" class="text-blue-600 hover:text-blue-400" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 NewsPortal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="source/js/app.js"></script>
+</body>
+
+</html>
