@@ -5,7 +5,7 @@ let noticiasFiltradas = []; // Para armazenar o resultado da pesquisa
 // Função para carregar as notícias do arquivo JSON
 async function carregarNoticias() {
     try {
-        const response = await fetch('config/pages/noticias.json'); // Caminho do seu arquivo JSON
+        const response = await fetch('../../config/pages/noticias.json'); // Caminho do seu arquivo JSON
         todasNoticias = await response.json(); // Armazena todas as notícias na variável global
 
         noticiasFiltradas = todasNoticias; // Inicializa com todas as notícias
