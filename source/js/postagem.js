@@ -1,7 +1,7 @@
 // Função para carregar as últimas postagens aleatórias
 async function carregarUltimasPostagens() {
     try {
-        const response = await fetch('../../../config/pages/noticias.json'); // Caminho do seu arquivo JSON
+        const response = await fetch('../../config/pages/noticias.json'); // Caminho do seu arquivo JSON
         const noticias = await response.json(); // Carrega todas as notícias
 
         // Seleciona aleatoriamente até 3 postagens
@@ -36,7 +36,7 @@ async function atualizarSugestoes() {
     const sugestoesContainer = document.getElementById("search-suggestions");
 
     try {
-        const response = await fetch('../../../config/pages/noticias.json');
+        const response = await fetch('../../config/pages/noticias.json');
         const noticias = await response.json();
 
         const sugestoes = noticias.filter(noticia =>
