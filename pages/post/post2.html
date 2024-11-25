@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital - Notícias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="source/css/styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold"><i class="fas fa-newspaper"></i> Segurança Digital</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../.././index.html" class="hover:text-blue-400"><i class="fas fa-home"></i> Página
+                            Inicial</a></li>
+                    <li><a href="../.././index.html" class="hover:text-blue-400"><i class="fas fa-laptop"></i> Últimas
+                            Notícias</a></li>
+                    <li><a href="../sobre.html" class="hover:text-blue-400"><i class="fas fa-futbol"></i> Sobre Nós</a>
+                    </li>
+                    <li><a href="../contato.html" class="hover:text-blue-400"><i class="fas fa-envelope"></i> Fale
+                            Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Layout com barra lateral à direita -->
+    <div class="container mx-auto py-16 px-6 grid grid-cols-12 gap-6">
+        <!-- Artigo Central (exibe o conteúdo principal) -->
+        <div class="col-span-9 bg-white p-8 rounded-lg shadow-lg">
+            <!-- Imagem de Capa -->
+            <div class="mb-6">
+                <img src="https://media.discordapp.net/attachments/1310302233992233082/1310552538826801192/sequestro_de_link.png?ex=6745a2aa&is=6744512a&hm=0d42197949e68e45bf658f42e8b49a81d295613731484e53de3b92360cf5dbd2&=&format=png"
+                    alt="Imagem ilustrativa sobre segurança digital" class="w-full rounded-lg shadow-md">
+            </div>
+
+            <!-- Título -->
+            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Vulnerabilidade Crítica em Servidores Windows: O Caso
+                da Exploração do RDP (Remote Desktop Protocol)</h2>
+
+            <!-- Autor e Data -->
+            <div class="flex items-center space-x-4 text-gray-600 mb-6">
+                <div class="flex items-center">
+                    <i class="fas fa-user text-gray-700"></i>
+                    <span class="ml-2">Julio Cezar</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-calendar text-gray-700"></i>
+                    <span class="ml-2">25/11/2024</span>
+                </div>
+            </div>
+
+
+            <!-- Conteúdo -->
+            <!-- Conteúdo -->
+            <div class="text-lg text-gray-700 mb-8">
+                <p class="mb-4">O <strong>Remote Desktop Protocol (RDP)</strong>, amplamente utilizado em servidores
+                    Windows, é uma ferramenta essencial para o gerenciamento remoto de sistemas. No entanto, essa
+                    funcionalidade tornou-se um alvo atrativo para cibercriminosos devido a suas vulnerabilidades.
+                    Recentemente, um caso crítico de exploração do RDP demonstrou os riscos associados a sua utilização
+                    sem as devidas medidas de segurança.</p>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Como a Exploração do RDP Acontece?</h3>
+                <p class="mb-4">Os ataques ao RDP geralmente exploram vulnerabilidades não corrigidas ou configurações
+                    inadequadas, como credenciais fracas. A seguir, estão as formas mais comuns de exploração:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Força bruta:</strong> Ataques que tentam inúmeras combinações de nome de usuário e senha
+                        para obter acesso.</li>
+                    <li><strong>Falhas de software:</strong> Vulnerabilidades conhecidas em versões antigas do RDP podem
+                        ser exploradas para executar códigos maliciosos.</li>
+                    <li><strong>Exposição indevida:</strong> Servidores acessíveis publicamente sem proteção adequada,
+                        como firewalls ou autenticação em dois fatores.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Impactos de um Ataque Bem-Sucedido</h3>
+                <p class="mb-4">Um ataque ao RDP pode ter consequências devastadoras para organizações e usuários,
+                    incluindo:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Instalação de ransomware:</strong> Após obter acesso, os invasores podem criptografar
+                        arquivos críticos e exigir resgate.</li>
+                    <li><strong>Roubo de dados:</strong> Informações confidenciais podem ser extraídas e usadas para
+                        fins maliciosos.</li>
+                    <li><strong>Controle total do sistema:</strong> Invasores podem usar o RDP para executar ações
+                        administrativas, comprometendo toda a rede.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Como Proteger Seu Sistema Contra Explorações do
+                    RDP?</h3>
+                <p class="mb-4">A proteção contra ataques ao RDP exige uma abordagem proativa e várias camadas de
+                    segurança. Aqui estão as principais medidas:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Ativar autenticação multifator (MFA):</strong> Isso adiciona uma camada extra de
+                        proteção, dificultando o acesso não autorizado.</li>
+                    <li><strong>Utilizar VPN:</strong> Restrinja o acesso ao RDP por meio de uma rede privada virtual
+                        (VPN), limitando o tráfego externo.</li>
+                    <li><strong>Manter o software atualizado:</strong> Instale todas as atualizações de segurança e
+                        patches para evitar exploração de vulnerabilidades conhecidas.</li>
+                    <li><strong>Configurar firewalls:</strong> Limite o acesso ao RDP apenas a endereços IP confiáveis.
+                    </li>
+                    <li><strong>Desativar o RDP quando não necessário:</strong> Se o RDP não for essencial, desative-o
+                        para eliminar o vetor de ataque.</li>
+                </ul>
+
+                <p class="mb-4">A segurança do RDP não deve ser subestimada. Investir em práticas de segurança e
+                    monitoramento contínuo é crucial para proteger servidores Windows e a integridade de dados
+                    corporativos e pessoais.</p>
+            </div>
+
+            <!-- Compartilhar -->
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="https://discord.gg/qPqbcrR3K8" class="text-blue-600 hover:text-blue-400" target="_blank"><i
+                        class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/feed/" class="text-blue-600 hover:text-blue-400" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MrHoneys" class="text-blue-600 hover:text-blue-400" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Barra Lateral Direita -->
+        <div class="col-span-3 bg-white p-6 rounded-lg shadow-lg">
+            <!-- Barra de Pesquisa -->
+            <div class="mb-6">
+                <input type="text" id="search-input" placeholder="Buscar conteúdos..."
+                    class="w-full p-3 border border-gray-300 rounded-lg">
+                <div id="search-suggestions" class="mt-2 text-gray-600"></div>
+            </div>
+
+            <!-- Últimas Postagens -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Novidades Recentes</h3>
+            <ul id="recent-posts" class="space-y-4">
+                <!-- As postagens serão carregadas aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Segurança Digital. Direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../source/js/postagem.js"></script>
+</body>
+
+</html>
